@@ -78,9 +78,11 @@ button:hover {
     width: 500px;
     height: 300px;
     /* padding - 对内distance between the edge of a box with it's inner element/children */
-    padding: 20px; /*add distance top left right bottom to the content of the box*/
+    padding: 20px;
+    /*add distance top left right bottom to the content of the box*/
     /* margin - 对外extra space around an element, unlike padding, which creates extra space within an element*/
-    margin: 20px; /*add distance top left right bottom to the neighbour*/
+    margin: 20px;
+    /*add distance top left right bottom to the neighbour*/
     /*color, thickness, type*/
     border: green 2px solid;
 }
@@ -91,7 +93,7 @@ button:hover {
     height: 250px;
     padding-left: 20px;
     margin-left: 20px;
-    border: blue 4px dashed;border:
+    border: blue 4px dashed;
 }
 
 #div3 {
@@ -100,15 +102,38 @@ button:hover {
     /* set margin top botton as your wish, set left right as auto */
     margin: 10px auto;
     border: yellowgreen 10px dotted;
-    
+
 }
 
 .footer {
-    background-color: #5a189a;  /* Deep purple */
+    background-color: #5a189a;
+    /* Deep purple */
     color: white;
     text-align: center;
     /* padding: 1rem 0; */
     font-size: 0.9rem;
     /* margin-top: 3rem;
     border-top: 2px solid #9d4edd; */
-  }
+}
+
+.special-format {
+    background-color: aqua;
+    text-align: justify;
+    color: blueviolet;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+#div1 h2 {
+    color: #1c0236;
+    font-family: "Cal Sans", sans-serif;
+    text-align: center;
+}
+
+#div2 p, #div3 p {
+    color: #1c0236;
+    font-family: "Cal Sans", sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
