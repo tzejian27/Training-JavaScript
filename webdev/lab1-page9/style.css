@@ -1,0 +1,88 @@
+/* purple-theme.css */
+
+body {
+    /* Property of the style an element*/
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8d9f8;
+    /* light lavender */
+    color: #2e003e;
+    /* deep purple */
+}
+
+header,
+h1 {
+    background-color: #7b2cbf;
+    /* bold purple */
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: "Cal Sans", sans-serif;
+}
+
+main {
+    padding: 2rem;
+}
+
+
+h2,
+h3 {
+    color: #5a189a;
+    font-family: "Cal Sans", sans-serif;
+}
+
+h2 {
+    text-decoration: underline;
+    font-weight: 1000;
+
+}
+
+a {
+    color: #9d4edd;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #c77dff;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #7b2cbf;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5a189a;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #d0bdf4;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(123, 44, 191, 0.1);
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    /*Arial = no tail, serif = got tail*/
+}
+
+.footer {
+    background-color: #5a189a;  /* Deep purple */
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    border-top: 2px solid #9d4edd;
+  }
+  
