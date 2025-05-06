@@ -1,0 +1,73 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.banner-left,
+.banner-right {
+  flex: 1;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.cta-button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background-color: #7b2cbf;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #5a189a;
+}
+
+.carousel {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 2rem;
+  max-width: 70vw;
+  max-height: 70vh;
+  overflow-y: auto;
+  border-radius: 12px;
+  text-align: center;
+  width: 80%;
+}
+
+.banner {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+  width: 100vw; /* Full width of the viewport */
+  background-image: url('home-bg.png.jpg');
+  background-size: contain; /* Maintain original aspect ratio */
+  background-repeat: no-repeat; /* Prevent tiling */
+  /* background-position: center; Center the image */
+  color: white;
+}
+
+.createtButton {
+  font-family: var(--font-krona-one);
+  display: block;
+  background: linear-gradient(
+    90deg,
+    rgba(234, 121, 121, 0.7),
+    rgba(73, 114, 228, 0.7)
+  );
+  background-clip: padding-box;
+  backdrop-filter: blur(10px);
+  color: white;
+  background-clip: padding-box;
+  padding: 14px 60px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: normal;
+  box-shadow: 2px 2px 5px #2e3033;
+  z-index: 1;
+  border: 2px solid #ffffff;
+}

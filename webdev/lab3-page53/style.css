@@ -28,7 +28,7 @@ header {
     background-color: #5a189a;
     color: white;
     text-align: center;
-    padding: 100px;
+    padding: 60px 20px; /* Reduced padding */
     background-image: url('banner.jpg');
     background-size: cover; /* Center the image */
     position: relative; /* For overlay */
@@ -53,17 +53,17 @@ header > * {
 header h1 {
     color: #e0b3ff; /* A shade of yellow for contrast */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem; /* Reduced font size */
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 5px; /* Reduced margin */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for better readability */
 }  
 
 header p{
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1rem; /* Reduced font size */
+    margin-bottom: 10px; /* Reduced margin */
 }
 
 .logo {
@@ -82,9 +82,10 @@ header p{
     display: flex;
     justify-content: space-between; /* Adjust spacing between items */
     align-items: center; /* Align items vertically */
-    gap:50px; /* Add spacing between items */
-    padding-right: 100px;
+    gap: 10px; /* Add spacing between items */
+    padding-right: 10px;
     list-style: none;
+    margin: 0; /* Reset default margins */
 }
 .navbar {
     display: flex;
@@ -92,23 +93,30 @@ header p{
     align-items: center;
     background-color: #333;
     color: white;
-    height: 100px;
+    height: auto; /* Adjust height to content */
+    padding: 10px;
     width: 100%; /* Ensure navbar takes full width */
 }
 
 nav-links {
     display: flex;
     flex-direction: row;
-    gap: 20px;    
-    width: 50%; /* Adjust as needed */
-    padding-right: 20px;
+    gap: 10px;
+    width: auto; /* Adjust width to content */
+    padding-right: 0;
+    margin: 0; /* Reset default margins */
+}
+
+.nav-links li {
+    margin: 0; /* Reset default margins */
 }
 
 .nav-links li a {
     color: white;
     text-decoration: none;
-    font-size: 1.1rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
+    padding: 5px; /* Add some padding for touch targets */
 }
 
 .nav-links li a:hover {
@@ -150,27 +158,29 @@ nav-links {
 }
 
 #services {
-    padding: 50px 20px;
+    padding: 30px 10px; /* Reduced padding */
     text-align: center;
     background-color: #f9f9f9;
 }
 
 #services h3 {
-    font-size: 2.5rem;
-    margin-bottom: 30px;
+    font-size: 1.8rem; /* Reduced font size */
+    margin-bottom: 20px;
     color: #333;
 }
 
 .service-card {
     background-color: white;
-    padding: 50px;
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 10px;
+    margin: 5px;
     transition: transform 0.3s ease;
     display: inline-block; /* Make them align horizontally */
-    width: 50%; /* Adjust as needed */
+    width: 90%; /* Adjust as needed */
     vertical-align: top; /* Align cards to the top */
+    flex-shrink: 0; /* Prevent cards from shrinking */
+    font-size: 0.9rem; /* Reduce font size */
 }
 
 .service-card:hover {
@@ -178,14 +188,12 @@ nav-links {
 }
 
 .service-card h4 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #007bff;
+    font-size: 1.2rem; /* Adjust heading size */
+    margin-bottom: 5px;
 }
 
 .service-card p {
-    font-size: 1rem;
-    color: #555;
+    font-size: 0.8rem; /* Adjust paragraph size */
 }
 
 footer {
@@ -196,7 +204,45 @@ footer {
     padding: 20px;
 }
 .services-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
-    position: center;
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent cards from wrapping */
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+/*Tablet design*/
+@media (max-width: 768px) {
+    body{
+        background-color: rgb(211, 63, 219);
+    }
+    services-container{
+        display: grid; /* Change to grid layout */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive columns */
+        gap: 20px; /* Adjust gap between items */
+    }
+}
+
+/*Mobile design*/
+@media (max-width: 576px) {
+    body{
+        background-color: yellow;
+    }
+    .about-container{
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+        grid-row: auto auto; /* Stack rows on mobile */
+        gap: 20px; /* Reduce gap between items */    
+    }
+    .services-container{
+        grid-template-columns: 1fr; /* Stack columns on mobile */
+        grid-row: auto auto; /* Stack rows on mobile */
+        gap: 20px; /* Reduce gap between items */
+    }
+}
+
+/* Desktop design */
+@media (min-width: 1025px){
+    body{
+        background-color: rgb(255, 255, 255);
+    }
 }
