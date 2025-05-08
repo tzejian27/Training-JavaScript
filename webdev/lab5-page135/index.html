@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>HTML + JS notes</h1>
+    <h2>Button pressed example</h2>
+    <!-- First way to set event listener (button clicked, add as property) -->
+    <button onclick="sayHello()">Click Me!</button>
+
+    <hr>
+    <!-- Second way -->
+    <h2>Retrieving data from the input example</h2>
+    <input type="text" id="name" placeholder="Enter your name">
+    <button onclick="greetings()">Click Input</button>
+    <h2 id="message"></h2>
+
+    <hr>
+    <h2>Using addEventListener instead of attribute</h2>
+    <button id="test-button">Click Me too</button>
+
+    <hr>
+    <h2>Using createElement and appendChild</h2>
+    <h3>To do list</h3>
+    <input type="text" placeholder="Enter item name" id="item-name">
+    <button onclick="addNewItem()" id="add-item-btn" disabled>Add New Item</button>
+    <ul id="item-list">
+        <!-- <li>This is Item 1</li>
+        <li>This is Item 2</li>
+        <li>This is Item 3</li> -->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

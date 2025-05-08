@@ -96,3 +96,55 @@ for (let i = 10; i > 0; i--){
 for(let i =1; i < 10; i += 2){
   console.log(i);
 }
+
+// Array - A collection of items
+// Declaring an Array
+let scores = [70,90,100,80,60];
+
+// Ad an item at the end of array
+scores.push(85);
+console.log(scores);
+
+//Remove an item from the end of array
+scores.pop();
+console.log(scores);
+
+// Retrieving an item from the array
+console.log(scores[1]); // index start from 0
+
+// Normal for loop
+for (let i = 0; i < scores.length; i++){
+  console.log(scores[i]);
+}
+
+// Length of the array
+console.log(scores.length);
+
+// Removing an item at the particular index
+// Remove from index 2, one item
+console.log(scores);
+scores.splice(2,1);
+console.log(scores);
+
+// Object
+// Key value type of collection
+const info = {"name":"Alice", "age":25, "professional": "Admin"};
+console.log(info.name);
+console.log(info.age);
+console.log(info.professional);
+            
+// Ex: Array of object
+// Key value type if collection
+// In JS, for Object, the "" on the left part(key) is not compulsory
+// When we are communicate with the Server (JSON), the "" is compulsory
+const employees = [
+  {"name":"Alice", "age":25, "professional": "Admin"},
+  {"name":"Karchoon", "age":26, "professional": "Support"},
+  {"name":"Meiqi", "age":26, "professional": "Java Developer"},
+  {name:"Thinesh", age:28, professional: "TF Support"}
+]
+
+for (let i = 0; i < employees.length; i++){
+  console.log(employees[i]["name"] + " is a " + employees[i]["professional"]);
+  console.log(`${employees[i]["name"]} from ${employees[i]["professional"]} department`);
+}
